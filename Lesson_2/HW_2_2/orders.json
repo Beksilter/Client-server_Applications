@@ -1,0 +1,25 @@
+{
+    "orders": [
+        {
+            "item": "Видеокарта Palit GeForce RTX 3050 StormX",
+            "quantity": "2",
+            "price": "62900",
+            "buyer": "Lymzin A.G.",
+            "date": "09.02.2022"
+        },
+        {
+            "item": "Процессор Intel Core i5-10400F OEM",
+            "quantity": "5",
+            "price": "11899",
+            "buyer": "Kudrin F.Q.",
+            "date": "19.01.2022"
+        },
+        {
+            "item": "Монитор LG UltraGear 27GL83A-B черный",
+            "quantity": "7",
+            "price": "27899",
+            "buyer": "Кукушкин В.А.",
+            "date": "30.12.2021"
+        }
+    ]
+}

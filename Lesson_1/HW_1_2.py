@@ -2,9 +2,15 @@
 2. Каждое из слов «class», «function», «method» записать в байтовом типе без преобразования в последовательность кодов 
 (не используя методы encode и decode) и определить тип, содержимое и длину соответствующих переменных.
 '''
+STR_A = 'class'
+STR_B = 'function'
+STR_C = 'method'
 
-print('\nЗадание 2')
-words = [b'class', b'function', b'method']
+STR_LIST = [STR_A, STR_B, STR_C]
 
-for word in words:
-    print(f'тип: {type(word)}, содержимое: {word}, длина: {len(word)} символов')
+for el_str in STR_LIST:
+    el = eval(f"b'{el_str}'")
+    print('=' * 50)
+    print('type: ', type(el))
+    print(el)
+    print('length of variable in bytes: ', len(el))
