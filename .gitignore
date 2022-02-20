@@ -5,3 +5,25 @@
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/vcs.xml
 /.idea/.gitignore
+/Client-server Applications/Scripts/pip.exe
+/.idea/.name
+/Lesson_4/common/__init__.py
+/Lesson_4/unit_tests/__init__.py
+/Client-server Applications/Scripts/activate
+/Client-server Applications/Scripts/activate.bat
+/Client-server Applications/Scripts/activate.fish
+/Client-server Applications/Scripts/activate.ps1
+/Client-server Applications/Scripts/activate.xsh
+/Client-server Applications/Scripts/activate_this.py
+/Client-server Applications/Scripts/chardetect.exe
+/Client-server Applications/Scripts/deactivate.bat
+/Client-server Applications/Scripts/pip3.10.exe
+/Client-server Applications/Scripts/pip3.exe
+/Client-server Applications/Scripts/pip-3.10.exe
+/Client-server Applications/Scripts/pydoc.bat
+/Client-server Applications/Scripts/python.exe
+/Client-server Applications/Scripts/pythonw.exe
+/Client-server Applications/Scripts/wheel.exe
+/Client-server Applications/Scripts/wheel3.10.exe
+/Client-server Applications/Scripts/wheel3.exe
+/Client-server Applications/Scripts/wheel-3.10.exe
