@@ -1,7 +1,7 @@
 """Утилиты"""
 
 import json
-from Lesson_3.HW_3_1.default.variables import MAX_MESSAGE_SIZE, ENCODING
+from Lesson_3.HW_3_1.common.variables import MAX_MESSAGE_SIZE, ENCODING
 
 def get_message(client):
     '''

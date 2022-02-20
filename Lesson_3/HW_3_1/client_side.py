@@ -4,9 +4,9 @@ import sys
 import json
 import socket
 import time
-from Lesson_3.HW_3_1.default.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
+from Lesson_3.HW_3_1.common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
-from Lesson_3.HW_3_1.default.utilities import get_message, send_message
+from Lesson_3.HW_3_1.common.utilities import get_message, send_message
 
 
 def create_presence(account_name='Guest'):

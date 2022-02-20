@@ -3,9 +3,9 @@
 import socket
 import sys
 import json
-from Lesson_3.HW_3_1.default.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
+from Lesson_3.HW_3_1.common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, RESPONDEFAULT_IP_ADDRESSSE
-from Lesson_3.HW_3_1.default.utilities import get_message, send_message
+from Lesson_3.HW_3_1.common.utilities import get_message, send_message
 
 
 def process_client_message(message):

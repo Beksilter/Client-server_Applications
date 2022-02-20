@@ -1,13 +1,12 @@
 """Программа-сервер"""
-
 import socket
 import sys
 import json
 import os
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from Lesson_4.common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
+from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR, DEFAULT_PORT
-from Lesson_4.common.utilities import get_message, send_message
+from common.utilities import get_message, send_message
 
 
 def process_client_message(message):

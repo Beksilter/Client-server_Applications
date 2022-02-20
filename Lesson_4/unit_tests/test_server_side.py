@@ -1,12 +1,11 @@
 """Unit-тесты сервера"""
-
 import unittest
 import sys, os
 
-import sys
-# sys.path.append(os.path.join(os.getcwd(), '..'))
-from Lesson_4.common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
-from Lesson_4.server_side import process_client_message
+sys.path.append(os.path.join(os.getcwd(), '..'))
+
+from common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
+from server_side import process_client_message
 
 
 class TestServer(unittest.TestCase):

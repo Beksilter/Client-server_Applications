@@ -3,9 +3,9 @@
 import unittest
 import sys, os
 
-# sys.path.append(os.path.join(os.getcwd(), '..'))
-from Lesson_4.common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
-from Lesson_4.client_side import create_presence, process_ans
+sys.path.append(os.path.join(os.getcwd(), '..'))
+from common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
+from client_side import create_presence, process_ans
 
 
 class TestClass(unittest.TestCase):

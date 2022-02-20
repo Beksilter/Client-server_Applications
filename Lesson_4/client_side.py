@@ -4,11 +4,11 @@ import sys, os
 import json
 import socket
 import time
-sys.path.append(os.path.join(os.getcwd(), ''))
+sys.path.append(os.path.join(os.getcwd(), '..'))
 
-from Lesson_4.common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
+from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
-from Lesson_4.common.utilities import get_message, send_message
+from common.utilities import get_message, send_message
 
 
 def create_presence(account_name='Guest'):
