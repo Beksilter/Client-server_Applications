@@ -46,8 +46,8 @@ class Log:
             ret_func = function_to_log(*args, **kwargs)
             CURRENT_LOGGER.debug(f'Была вызвана функция {function_to_log.__name__} c параметрами {args}, {kwargs}. '
                          f'Вызов из модуля {function_to_log.__module__}. Вызов из'
-                         f' функции {traceback.format_stack()[0].strip().split()[-1]}.'
-                         f'Вызов из функции {inspect.stack()[1][3]}', stacklevel=2)
+                         f' функции {traceback.format_stack()[0].strip().split()[-1]}.')
+                         # f'Вызов из функции {inspect.stack()[1][3]}', stacklevel=2)
             return ret_func
 
         return log_saver
