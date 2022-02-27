@@ -1,0 +1,13 @@
+items:
+- motherboard
+- graphics card
+- CPU
+- RAM
+- SSD
+items_quantity: 14
+items_price:
+  motherboard: 80€-200€
+  graphics card: 650€-800€
+  CPU: 500€-600€
+  RAM: 100€-150€
+  SSD: 120€-180€
