@@ -21,7 +21,7 @@ LOG_FILE = handlers.TimedRotatingFileHandler(PATH, encoding='utf8', interval=1, 
 LOG_FILE.setFormatter(CLIENT_FORMATTER)
 
 # создаём регистратор и настраиваем его
-LOGGER = getLogger('client')
+LOGGER = getLogger('client_side')
 LOGGER.addHandler(STREAM_HANDLER)
 LOGGER.addHandler(LOG_FILE)
 LOGGER.setLevel(LOGGING_LEVEL)
