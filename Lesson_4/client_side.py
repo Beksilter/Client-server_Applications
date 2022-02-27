@@ -1,12 +1,14 @@
 """Программа-клиент"""
 
-import sys
+import sys, os
 import json
 import socket
 import time
-from Lesson_3.HW_3_1.common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
+sys.path.append(os.path.join(os.getcwd(), '..'))
+
+from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
-from Lesson_3.HW_3_1.common.utilities import get_message, send_message
+from common.utilities import get_message, send_message
 
 
 def create_presence(account_name='Guest'):
@@ -34,7 +36,7 @@ def process_ans(message):
     raise ValueError
 
 
-def client_action():
+def main():
     '''Загружаем параметы коммандной строки'''
     try:
         server_address = sys.argv[1]
@@ -60,5 +62,5 @@ def client_action():
     except (ValueError, json.JSONDecodeError):
         print('Не удалось декодировать сообщение сервера.')
 
-
-client_action()
+if __name__ == '__main__':
+    main()

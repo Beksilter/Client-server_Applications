@@ -1,11 +1,12 @@
 """Программа-сервер"""
-
 import socket
 import sys
 import json
-from Lesson_3.HW_3_1.common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
-    PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, RESPONDEFAULT_IP_ADDRESSSE
-from Lesson_3.HW_3_1.common.utilities import get_message, send_message
+import os
+sys.path.append(os.path.join(os.getcwd(), '..'))
+from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
+    PRESENCE, TIME, USER, ERROR, DEFAULT_PORT
+from common.utilities import get_message, send_message
 
 
 def process_client_message(message):
@@ -18,12 +19,12 @@ def process_client_message(message):
             and USER in message and message[USER][ACCOUNT_NAME] == 'Guest':
         return {RESPONSE: 200}
     return {
-        RESPONDEFAULT_IP_ADDRESSSE: 400,
+        RESPONSE: 400,
         ERROR: 'Bad Request'
     }
 
 
-def server_action():
+def main():
     '''
     Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.
     Сначала обрабатываем порт прописывая в командной строке или запуская через PyCharm:
@@ -81,5 +82,5 @@ def server_action():
             print('Принято некорретное сообщение от клиента.')
             client.close()
 
-
-server_action()
+if __name__ == '__main__':
+    main()
