@@ -1,0 +1,4 @@
+2022-02-20 13:46:52,184 CRITICAL server_log_settings.py Критическая ошибка
+2022-02-20 13:46:52,185 ERROR    server_log_settings.py Ошибка
+2022-02-20 13:46:52,185 DEBUG    server_log_settings.py Отладочная информация
+2022-02-20 13:46:52,185 INFO     server_log_settings.py Информационное сообщение
